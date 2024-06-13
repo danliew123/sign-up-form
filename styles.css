@@ -1,0 +1,175 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+@font-face {
+  font-family: odin;
+  src: url(Norse-Bold.otf);
+}
+
+body {
+  display: flex;
+}
+
+.left {
+  background-color: rgb(16, 224, 103);
+  width: 35vw;
+  height: 100vh;
+  background: no-repeat url(halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+}
+
+img {
+  height: max(72px,8vw);
+  display: inline;
+  position: relative;
+  top: 8px;
+  right: 4px;
+}
+
+.odin {
+  font-family: odin;
+  color: #fff;
+  font-size: max(72px,8vw);
+  text-align: center;
+  margin-top: 250px;
+  background-color: rgb(199, 172, 172, 0.2);
+    
+}
+
+.right {
+  width: 65vw;
+  height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+
+.header {
+  background-color: rgb(247, 245, 245);
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 32px;
+  padding-left: 32px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.em {
+  margin-top: 20px;
+  font-size: 1.1em;
+}
+
+.form {
+  background-color: rgb(255, 255, 255);
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom {
+  background-color: rgb(247, 245, 245);
+  height: 30vh;
+}
+
+.call-to-action {
+  margin-top: 16px;
+  margin-left: 32px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  align-self: flex-start;
+}
+
+form {
+  margin-top: 16px;
+  margin-left: 64px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.first-column,
+.second-column {
+  width: max(45%,200px);
+}
+
+.form-row {
+  font-size: 0.8rem;
+  font-weight: normal;
+  
+}
+
+.form-row * {
+  display: block;
+}
+
+label {
+  color: rgb(43, 41, 41);
+}
+
+input {
+  width: max(80%, 180px);
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+}
+
+input:focus {
+  border: 1.5px solid #3866c4;
+  outline: none;
+  box-shadow: 1px 1px 3px rgb(19, 18, 18);
+}
+
+input:invalid {
+  border: 1.7px solid #c43838;
+  outline: none;
+}
+
+button {
+  width: 220px;
+  height: 50px;
+  position: absolute;
+  top: 190px;
+  background-color: #596D48;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+@media (max-width: 615px){
+    button {
+      top: 300px
+    }
+    .bottom {
+      background-color:  rgb(255, 255, 255);
+    }
+    input {
+      width: 180px;
+    
+  }
+}
+
+
