@@ -74,6 +74,8 @@ img {
   padding-left: 32px;
   font-size: 1.2em;
   font-weight: 600;
+  position: relative;
+  z-index: 11;
 }
 
 .em {
@@ -87,7 +89,9 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  box-shadow: 1px 1px 7px rgb(128, 122, 122);
+  position: relative;
+  z-index: 10;
 }
 
 .bottom {
@@ -110,6 +114,7 @@ form {
   flex-wrap: wrap;
   justify-content: flex-start;
   position: relative;
+  
 }
 
 .first-column,
